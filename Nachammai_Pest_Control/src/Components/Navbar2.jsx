@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import Quotation from '../Pages/Quotation';
 
 const Navbar2 = () => {
-    const [isOpen, setIsOpen] = useState(false);
+   const [isOpen, setIsOpen] = useState(false);
     
   return (
     <nav className="bg-gray-700 w-[75%] mx-auto mt-3 mb-3 text-white p-4">
@@ -15,11 +16,8 @@ const Navbar2 = () => {
           <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/services" className="hover:text-gray-300">Services</Link>
           <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
-          <Link to="/quote">
-            <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-400">
-              Get Free Quote
-            </button>
-          </Link>
+          <Link to="#" className="hover:text-gray-300"><Quotation/></Link>
+          
         </div>
 
         {/* Hamburger Icon */}
@@ -43,6 +41,8 @@ const Navbar2 = () => {
         </div>
       </div>
 
+       
+
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-700 space-y-4 py-4">
@@ -50,11 +50,8 @@ const Navbar2 = () => {
           <Link to="/about" className="block text-center hover:text-gray-300">About</Link>
           <Link to="/services" className="block text-center hover:text-gray-300">Services</Link>
           <Link to="/contact" className="block text-center hover:text-gray-300">Contact Us</Link>
-          <Link to="/quote">
-            <button className="bg-green-500 text-white block w-full py-2 text-center rounded hover:bg-green-400">
-              Get Free Quote
-            </button>
-          </Link>
+          <Link to="#" className="hover:text-black"><Quotation/></Link>
+          
         </div>
       )}
     </nav>

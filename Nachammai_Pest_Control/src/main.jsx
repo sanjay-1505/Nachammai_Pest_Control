@@ -7,6 +7,8 @@ import Home from "./Pages/Home.jsx";
 import  About from "./Pages/About.jsx";
 import Services from './Pages/Services.jsx'
 import Contact from "./Pages/Contact.jsx";
+import { Quote } from "lucide-react";
+
 
 const route = createBrowserRouter([
   {
@@ -29,6 +31,7 @@ const route = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      
     ],
   },
 ]);

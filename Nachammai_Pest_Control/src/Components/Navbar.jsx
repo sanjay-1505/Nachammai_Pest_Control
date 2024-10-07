@@ -14,7 +14,7 @@ const Navbar = () => {
             </div>
             <div className='flex flex-col'>
                 <span className="text-lg hidden font-semibold lg:block ">Call Us now</span>
-                <a href="tel:+91 97911 71377" className="text-lg font-semibold text-blue-500">+91 97911 71377</a>
+                <a href="tel:+91 9791171377" className="text-lg font-semibold text-blue-500">+91 97911 71377</a>
             </div> 
         </div>
         <div className="flex items-center space-x-2">
