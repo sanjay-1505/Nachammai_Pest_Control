@@ -119,7 +119,7 @@ const Home = () => {
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 xl:gap-0 justify-between items-center">
             <div className="flex flex-col justify-start order-2 lg:order-1 gap-y-4">
               <h2 className="text-[#333333] text-3xl font-bold leading-snug mt-4 lg:mt-0 lg:mb-2.5">
-                Coco Products Supplier From India
+                NACHAMMAI PEST CONTROL
               </h2>
               <p className="text-[#333333] text-justify leading-relaxed md:text-xl">
                 A successful and renowned coco coir exporter and supplier from
@@ -131,8 +131,8 @@ const Home = () => {
               </p>
 
               <div className="mt-5 flex justify-end">
-                <Link to="/aboutus">
-                  <button className="flex items-center text-white underline underline-offset-1 bg-[#c3986b] text-lg px-5 py-2 rounded-lg shadow-md hover:bg-[#a97e53] transition">
+                <Link to="/about">
+                  <button className="flex items-center text-black font-bold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
                     See More
                     <img
                       className="ml-0.5 h-6 w-6 -mr-2"
@@ -145,13 +145,13 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center flex-col lg:justify-end gap-4 items-center order-1 lg:order-2">
-              <p className='text-[#333333] text-justify leading-relaxed md:text-xl'>Find Out what can we do for you.
+              <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg '>Find Out what can we do for you.
               </p>
-              <p className='text-[#333333] text-justify leading-relaxed md:text-xl'>Get in Touch Today for more information!
+              <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg'>Get in Touch Today for more information!
               </p>
               
-              <button className='bg-blue-800 p-3 rounded-md'><a href="tel:+91 9791171377">Call Now</a></button>
-              <button className='bg-blue-800 p-3 rounded-md'><Link to='/contact'>Contact Us</Link></button>
+              <button className='bg-green-800 p-3 rounded-md text-black  font-bold'><a href="tel:+91 9791171377">Call Now</a></button>
+              <button className='bg-green-800 p-3 rounded-md text-black font-bold'><Link to='/contact'>Contact Us</Link></button>
             </div>
           </div>
         </div>
@@ -188,6 +188,8 @@ const Home = () => {
             </div>
         </div>
 
+        {/*Technicians*/}
+
         <section className="pt-8 md:pt-14 ">
           <h1 className="mt-5 md:mt-0 text-3xl md:text-5xl text-center mb-10 text-black">
             Profession Pest Control Technicians
@@ -199,7 +201,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-black mb-4">
-                Our Vision & mission
+                Pest Control Inspections done right 
               </h2>
               <p className="text-[#333333] leading-relaxed md:text-xl">
                 We focus on making the best resource, for an excellent Growing
@@ -213,7 +215,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
               <img
-                src="images/ourvisionandmission.png"
+                src="images/tech1.jpg"
                 alt="Our Vision and Mission"
                 className="object-cover rounded-lg"
               />
@@ -227,7 +229,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-black mb-4">
-                Customer Service
+                Customizd Treatment Plans
               </h2>
               <p className="text-[#333333] leading-relaxed md:text-xl">
                 Through unparalleled customer service and providing excellent
@@ -240,7 +242,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center lg:justify-end items-center">
               <img
-                src="images/customerservice.png"
+                src="images/tech2.jpg"
                 alt="Customer Service"
                 className="object-cover rounded-lg"
               />
@@ -254,7 +256,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-black mb-4">
-                Our Vision & mission
+                Your Pest Free Partners
               </h2>
               <p className="text-[#333333] leading-relaxed md:text-xl">
                 We focus on making the best resource, for an excellent Growing
@@ -268,7 +270,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
               <img
-                src="images/ourvisionandmission.png"
+                src="images/tech3.jpg"
                 alt="Our Vision and Mission"
                 className="object-cover rounded-lg"
               />
@@ -282,7 +284,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-black mb-4">
-                Customer Service
+                Service on your time
               </h2>
               <p className="text-[#333333] leading-relaxed md:text-xl">
                 Through unparalleled customer service and providing excellent
@@ -295,7 +297,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center lg:justify-end items-center">
               <img
-                src="images/customerservice.png"
+                src="images/tech4.jpeg"
                 alt="Customer Service"
                 className="object-cover rounded-lg"
               />
@@ -309,7 +311,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
               <h2 className="text-3xl font-bold text-black mb-4">
-                Our Vision & mission
+                Free Service on next Service
               </h2>
               <p className="text-[#333333] leading-relaxed md:text-xl">
                 We focus on making the best resource, for an excellent Growing
@@ -323,7 +325,7 @@ const Home = () => {
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
               <img
-                src="images/ourvisionandmission.png"
+                src="images/tech5.jpg"
                 alt="Our Vision and Mission"
                 className="object-cover rounded-lg"
               />

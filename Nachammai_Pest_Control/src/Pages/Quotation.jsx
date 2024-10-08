@@ -38,7 +38,7 @@ const Quotation = () => {
     <div>
     {/* Button to open modal */}
     <button
-            className="bg-lime-500 text-black font-bold py-2 px-4 rounded hover:bg-lime-600"
+            className=" bg-lime-500 text-black font-bold py-2 px-4 rounded hover:bg-lime-600"
             onClick={() => setIsOpen(true)}  // Open modal on click
             >
             Get Free Quote

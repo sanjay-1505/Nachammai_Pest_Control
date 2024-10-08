@@ -29,9 +29,9 @@ const About = () => {
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
               <img
-                src="images/ourvisionandmission.png"
+                src="images/about1.avif"
                 alt="Our Vision and Mission"
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg h-[500px]"
               />
             </div>
           </div>
@@ -39,7 +39,7 @@ const About = () => {
       </section>
 
 
-      <section className="pt-8 md:pt-14 pb-10 ">
+      <section className="pt-8 md:pt-12 pb-8 ">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col justify-center items-center">
@@ -47,9 +47,9 @@ const About = () => {
                 Our Team
               </h2>
               <img
-                src="/images/ourteam.png"
+                src="/images/outteam.jpg"
                 alt="ourteamimage"
-                className="object-cover rounded-lg mb-3 md:mb-10"
+                className="object-cover rounded-lg mb-3 md:mb-10 h-[400px] w-[400px]"
               />
             </div>
             <p className="text-[#333333] leading-relaxed md:text-xl">
