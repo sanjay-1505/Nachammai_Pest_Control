@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Contact } from 'lucide-react';
 import ContactUs from '../Components/ContactUS';
 import FAQ from '../Components/FAQ';
+import RandomPointsGame from '../Components/RandomPointsGame';
 
 const Home = () => {
     const settings = {
@@ -46,6 +47,7 @@ const Home = () => {
 
   return (
     <div>
+      <RandomPointsGame/>
         {/* Carousel */}
         <section className="slider-container overflow-hidden">
             <Slider {...settings}>
@@ -162,28 +164,28 @@ const Home = () => {
            <h2 className="text-2xl text-center font-bold mb-4">What Kind of Pest Control Service Are You Looking For?</h2>
             <div className="grid grid-cols-3 gap-4">
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/ant.jpg" alt="" className='w-20 h-20' />
-                <p className="text-gray-700 mt-2">Ants</p>
+                <img src="/images/ants.gif" alt="" className='w-20 h-20' />
+                <p className="text-black mt-2 font-bold">Ants</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/roaches.jpg" alt="" className='w-20 h-20' />
-                <p className="text-gray-700 mt-2">Roaches</p>
+                <img src="/images/roaches.gif" alt="" className='w-20 h-20' />
+                <p className="text-black mt-2 font-bold">Roaches</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/termite.webp" alt="" className='w-20 h-20' />
-                <p className="text-gray-700 mt-2">Termites</p>
+                <img src="/images/termites.gif" alt="" className='w-20 h-20' />
+                <p className="text-black mt-2 font-bold">Termites</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/spider.png" alt="" className='w-20 h-20' />
-                <p className="text-gray-700 mt-2">Spiders</p>
+                <img src="/images/spiders.gif" alt="" className='w-20 h-20' />
+                <p className="text-black mt-2 font-bold">Spiders</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/rat.jpg" alt="" className='w-24 h-20' />
-                <p className="text-gray-700 mt-2">Rats & Mice</p>
+                <img src="/images/rats.gif" alt="" className='w-24 h-20' />
+                <p className="text-black mt-2 font-bold">Rats & Mice</p>
               </div>
               <div className="flex flex-col items-center justify-center">
-                <img src="/images/bedbug.webp" alt="" className='w-20 h-20' />
-                <p className="text-gray-700 mt-2">Bed Bugs</p>
+                <img src="/images/bedbugs.gif" alt="" className='w-20 h-20' />
+                <p className="text-black mt-2 font-bold">Bed Bugs</p>
               </div>
             </div>
         </div>
