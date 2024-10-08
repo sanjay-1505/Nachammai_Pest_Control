@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
 import { Contact } from 'lucide-react';
 import ContactUs from '../Components/ContactUS';
+import FAQ from '../Components/FAQ';
 
 const Home = () => {
     const settings = {
@@ -108,6 +109,54 @@ const Home = () => {
             </Slider>
         </section>
 
+        {/*About Us*/}
+        <section className="-mt-2 py-14 ">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="flex justify-center items-center text-brown900 mb-5 md:mb-8">
+            <h1 className="text-4xl md:text-5xl">About Us</h1>
+          </div>
+
+          <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 xl:gap-0 justify-between items-center">
+            <div className="flex flex-col justify-start order-2 lg:order-1 gap-y-4">
+              <h2 className="text-[#333333] text-3xl font-bold leading-snug mt-4 lg:mt-0 lg:mb-2.5">
+                NACHAMMAI PEST CONTROL
+              </h2>
+              <p className="text-[#333333] text-justify leading-relaxed md:text-xl">
+                A successful and renowned coco coir exporter and supplier from
+                India, JDS specializes in premium quality Coco Products. We work
+                continuously to explore and exhibit innovative collections in
+                the industry. We also offer customized solutions to meet the
+                unique needs of our clients. Choose JDS for all your Coco Coir
+                needs and experience the difference in quality and service.
+              </p>
+
+              <div className="mt-5 flex justify-end">
+                <Link to="/about">
+                  <button className="flex items-center text-black font-bold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
+                    See More
+                    <img
+                      className="ml-0.5 h-6 w-6 -mr-2"
+                      src="/icons/Right2.svg"
+                      alt="Arrow icon"
+                    />
+                  </button>
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex justify-center flex-col lg:justify-end gap-4 items-center order-1 lg:order-2">
+              <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg '>Find Out what can we do for you.
+              </p>
+              <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg'>Get in Touch Today for more information!
+              </p>
+              
+              <button className='bg-green-800 p-3 rounded-md text-black  font-bold'><a href="tel:+91 9791171377">Call Now</a></button>
+              <button className='bg-green-800 p-3 rounded-md text-black font-bold'><Link to='/contact'>Contact Us</Link></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
         {/*Pest Services*/}
         <div className="bg-white p-4 rounded-lg  mt-3 mb-3">
            <h2 className="text-2xl text-center font-bold mb-4">What Kind of Pest Control Service Are You Looking For?</h2>
@@ -138,9 +187,157 @@ const Home = () => {
               </div>
             </div>
         </div>
-        
 
-        <ContactUs/>
+        {/*Technicians*/}
+
+        <section className="pt-8 md:pt-14 ">
+          <h1 className="mt-5 md:mt-0 text-3xl md:text-5xl text-center mb-10 text-black">
+            Profession Pest Control Technicians
+          </h1>
+       </section>
+
+       <section className="pt-8 md:pt-14 mb-4">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col order-1 lg:order-2">
+              <h2 className="text-3xl font-bold text-black mb-4">
+                Pest Control Inspections done right 
+              </h2>
+              <p className="text-[#333333] leading-relaxed md:text-xl">
+                We focus on making the best resource, for an excellent Growing
+                media. We are specializing in a wide range of value-added coir
+                products. Our dream is to support and cater globally to a
+                sustainable day-to-day living with our eco-friendly products.
+                Grow as the best sustainable agro supplier ensuring sufficient
+                supply with high quality, having in mind, the protection of our
+                environment and natural resources.
+              </p>
+            </div>
+            <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
+              <img
+                src="images/tech1.jpg"
+                alt="Our Vision and Mission"
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-5 md:pt-14 mb-4 ">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+            <div className="flex flex-col">
+              <h2 className="text-3xl font-bold text-black mb-4">
+                Customizd Treatment Plans
+              </h2>
+              <p className="text-[#333333] leading-relaxed md:text-xl">
+                Through unparalleled customer service and providing excellent
+                quality products, we aspire to excel in matching consistently
+                the customer's expectations. Our customer service is swift,
+                comfortable, individualized, and understanding. Our company
+                delivers it by taking sufficient time in analyzing and
+                recognizing customer needs.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end items-center">
+              <img
+                src="images/tech2.jpg"
+                alt="Customer Service"
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-8 md:pt-14 mb-4">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col order-1 lg:order-2">
+              <h2 className="text-3xl font-bold text-black mb-4">
+                Your Pest Free Partners
+              </h2>
+              <p className="text-[#333333] leading-relaxed md:text-xl">
+                We focus on making the best resource, for an excellent Growing
+                media. We are specializing in a wide range of value-added coir
+                products. Our dream is to support and cater globally to a
+                sustainable day-to-day living with our eco-friendly products.
+                Grow as the best sustainable agro supplier ensuring sufficient
+                supply with high quality, having in mind, the protection of our
+                environment and natural resources.
+              </p>
+            </div>
+            <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
+              <img
+                src="images/tech3.jpg"
+                alt="Our Vision and Mission"
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-5 md:pt-14 mb-4">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
+            <div className="flex flex-col">
+              <h2 className="text-3xl font-bold text-black mb-4">
+                Service on your time
+              </h2>
+              <p className="text-[#333333] leading-relaxed md:text-xl">
+                Through unparalleled customer service and providing excellent
+                quality products, we aspire to excel in matching consistently
+                the customer's expectations. Our customer service is swift,
+                comfortable, individualized, and understanding. Our company
+                delivers it by taking sufficient time in analyzing and
+                recognizing customer needs.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end items-center">
+              <img
+                src="images/tech4.jpeg"
+                alt="Customer Service"
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-8 md:pt-14 mb-4">
+        <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col order-1 lg:order-2">
+              <h2 className="text-3xl font-bold text-black mb-4">
+                Free Service on next Service
+              </h2>
+              <p className="text-[#333333] leading-relaxed md:text-xl">
+                We focus on making the best resource, for an excellent Growing
+                media. We are specializing in a wide range of value-added coir
+                products. Our dream is to support and cater globally to a
+                sustainable day-to-day living with our eco-friendly products.
+                Grow as the best sustainable agro supplier ensuring sufficient
+                supply with high quality, having in mind, the protection of our
+                environment and natural resources.
+              </p>
+            </div>
+            <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
+              <img
+                src="images/tech5.jpg"
+                alt="Our Vision and Mission"
+                className="object-cover rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className='mt-3 mb-4'>
+      <FAQ/>
+      </div>
+      <ContactUs/>
     </div>
 
    

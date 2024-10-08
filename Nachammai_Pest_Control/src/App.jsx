@@ -17,7 +17,7 @@ function App() {
       <Outlet/>
       <Footer/>
        <a
-      href="https://wa.me/9791171377"
+      href="https://wa.me/+919791171377"
       target="#"
       rel="noopener noreferrer"
       className="fixed bottom-14 right-6 z-50 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:scale-110"

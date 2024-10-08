@@ -8,6 +8,8 @@ import  About from "./Pages/About.jsx";
 import Services from './Pages/Services.jsx'
 import Contact from "./Pages/Contact.jsx";
 
+
+
 const route = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +31,7 @@ const route = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      
     ],
   },
 ]);

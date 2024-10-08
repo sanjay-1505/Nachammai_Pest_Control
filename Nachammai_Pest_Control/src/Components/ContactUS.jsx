@@ -57,7 +57,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="py-14 bg-brown100">
+    <section className="py-14 bg-brown100 ">
       <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
         <div className="flex justify-center items-center text-brown900 mb-5 md:mb-8">
           <h1 className="text-center text-4xl md:text-5xl">Get In Touch</h1> 
