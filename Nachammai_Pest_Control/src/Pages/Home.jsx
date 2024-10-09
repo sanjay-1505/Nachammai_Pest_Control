@@ -51,7 +51,7 @@ const Home = () => {
         {/* Carousel */}
         <section className="slider-container overflow-hidden">
             <Slider {...settings}>
-            <div className="bg-[url('/images/banner1.webp')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            <div className="bg-[url('/images/bannersss1.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="container">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -70,7 +70,7 @@ const Home = () => {
                 </div>
                 </div>
             </div>
-            <div className="bg-[url('/images/banner2.webp')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            <div className="bg-[url('/images/bannersss2.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -89,7 +89,7 @@ const Home = () => {
                 </div>
                 </div>
             </div>
-            <div className="bg-[url('/images/banner3.avif')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            <div className="bg-[url('/images/bannersss.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -114,7 +114,7 @@ const Home = () => {
         {/*About Us*/}
         <section className="-mt-2 py-14 ">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
-          <div className="flex justify-center items-center text-brown900 mb-5 md:mb-8">
+          <div className="flex justify-center items-center text-black font-bold mb-5 md:mb-8">
             <h1 className="text-4xl md:text-5xl">About Us</h1>
           </div>
 
@@ -134,7 +134,7 @@ const Home = () => {
 
               <div className="mt-5 flex justify-end">
                 <Link to="/about">
-                  <button className="flex items-center text-black font-bold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
+                  <button className="flex items-center text-black font-semibold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
                     See More
                     <img
                       className="ml-0.5 h-6 w-6 -mr-2"
@@ -152,8 +152,8 @@ const Home = () => {
               <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg'>Get in Touch Today for more information!
               </p>
               
-              <button className='bg-green-800 p-3 rounded-md text-black  font-bold'><a href="tel:+91 9791171377">Call Now</a></button>
-              <button className='bg-green-800 p-3 rounded-md text-black font-bold'><Link to='/contact'>Contact Us</Link></button>
+              <button className='bg-green-800 p-3 rounded-md text-black  font-semibold'><a href="tel:+91 9791171377">Call Now</a></button>
+              <button className='bg-green-800 p-3 rounded-md text-black font-semibold'><Link to='/contact'>Contact Us</Link></button>
             </div>
           </div>
         </div>
