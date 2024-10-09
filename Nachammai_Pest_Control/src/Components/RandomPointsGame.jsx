@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+
 
 // Replace with your mosquito image
 const mosquitoImage = "/images/games.gif"; // Example URL, replace with actual image link
@@ -71,14 +71,7 @@ const RandomPointsGame = () => {
         />
       ))}
 
-      {/* Show "Killed" popup after timer finishes */}
-      {killed && (
-        <div className="fixed w-full h-full top-0 left-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-          <div className="bg-white p-8 rounded-lg shadow-lg text-3xl text-red-500"> 
-            Killed 
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 };

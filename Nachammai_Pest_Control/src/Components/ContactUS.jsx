@@ -57,9 +57,9 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="py-14 bg-brown100 ">
+    <section className="bg-brown50 py-14  ">
       <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
-        <div className="flex justify-center items-center text-brown900 mb-5 md:mb-8">
+        <div className="flex justify-center items-center text-black mb-5 md:mb-8">
           <h1 className="text-center text-4xl md:text-5xl">Get In Touch</h1> 
         </div>
 
@@ -135,7 +135,7 @@ const ContactUs = () => {
             )}
 
             <div className="mt-7">
-              <button className="px-5 py-2.5 rounded-lg text-white bg-brown600 font-semibold transition-all hover:transition-all hover:bg-brown700">
+              <button className="px-5 py-2.5 rounded-lg text-black bg-green-900 font-semibold transition-all hover:transition-all hover:bg-green-500">
                 SEND MESSAGE
               </button>
             </div>
