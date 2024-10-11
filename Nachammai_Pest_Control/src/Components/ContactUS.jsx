@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import emailjs from "emailjs-com";
+import { motion } from "framer-motion";
 
 const Schema = z
   .object({
@@ -56,8 +57,13 @@ const ContactUs = () => {
     );
   };
 
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
+
   return (
-    <section className="bg-brown50 py-14  ">
+    <motion.section className="bg-brown50 py-14" variants={fadeIn} initial="hidden" animate="visible" >
       <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
         <div className="flex justify-center items-center text-black mb-5 md:mb-8">
           <h1 className="text-center text-4xl md:text-5xl">Get In Touch</h1> 
@@ -142,7 +148,7 @@ const ContactUs = () => {
           </div>
         </form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const footerAnimation = {
+    hidden: { opacity: 0, y: 50 }, // Start with opacity 0 and move it down slightly
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } } // Animate to full opacity and move up to its original position
+  };
+
   return (
-    <footer className=" pt-14 pb-5 px-8 md:px-16 lg:px-32">
+    <motion.footer variants={footerAnimation} initial="hidden" animate="visible" className=" pt-14 pb-5 px-8 md:px-16 lg:px-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:flex justify-between">
         <div className="flex sm:space-x-4 xl:space-x-8">
           <div className="hidden sm:block">
@@ -160,7 +166,7 @@ const Footer = () => {
               </div>
               <div>
                 <h1 className="text-brown900 font-semibold">Location</h1>
-                <p className="text-[#333333]">11°43'41.5"N 66°45'02.5"F</p>
+                <p className="text-[#333333]">Kattupakkam,Chennai</p>
               </div>
             </div>
           </div>
@@ -170,7 +176,7 @@ const Footer = () => {
       <p className="mt-10 text-center text-brown900 text-sm">
         All copyright@2024 at NACHAMMAI PEST CONTROL 
       </p>
-    </footer>
+    </motion.footer>
   );
 };
 

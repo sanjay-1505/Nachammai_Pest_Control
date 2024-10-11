@@ -6,7 +6,7 @@ const mosquitoImage = "/images/games.gif"; // Example URL, replace with actual i
 
 const RandomPointsGame = () => {
   const [mosquitoes, setMosquitoes] = useState([]);
-  const [timer, setTimer] = useState(6); // Timer is 10 seconds
+  const [timer, setTimer] = useState(4); // Timer is 10 seconds
   const [killed, setKilled] = useState(false);
 
   useEffect(() => {

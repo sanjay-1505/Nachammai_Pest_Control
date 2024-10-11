@@ -1,10 +1,16 @@
 import React from 'react'
 import ContactUs from '../Components/ContactUS'
+import { motion } from 'framer-motion';
 
 const About = () => {
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
+
   return (
-    <div>
-      <section className="relative bg-[url('/images/banner2.webp')] bg-center bg-no-repeat bg-cover min-h-[600px] flex justify-center items-center">
+    <motion.div variants={fadeIn} initial="hidden" animate="visible"  >
+      <section className="relative bg-[url('/images/bannersss2.jpg')] bg-center bg-no-repeat bg-cover min-h-[600px] flex justify-center items-center">
         <h1 className=" text-black text-5xl md:text-6xl font-semibold">
           About Us
         </h1>
@@ -66,7 +72,7 @@ const About = () => {
 
 
       <ContactUs/>
-    </div>
+    </motion.div>
   )
 }
 

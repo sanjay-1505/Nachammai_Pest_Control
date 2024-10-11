@@ -1,23 +1,20 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Quotation from '../Pages/Quotation';
 
 const Navbar2 = () => {
-   const [isOpen, setIsOpen] = useState(false);
-    
-  return (
-    <nav className="bg-gray-700 w-[75%] mx-auto mt-3 mb-3 text-white p-4">
-      <div className=" flex justify-center">
-        
+  const [isOpen, setIsOpen] = useState(false);
 
+  return (
+    <nav className="bg-gray-700 w-[75%] rounded-lg mx-auto mt-3 mb-3 text-white p-4 sticky top-0 z-50">
+      <div className="flex justify-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 items-center">
           <Link to="/" className="hover:text-gray-300">Home</Link>
           <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/services" className="hover:text-gray-300">Services</Link>
           <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
-          <Link to="#" className="hover:text-gray-300"><Quotation/></Link>
-          
+          <Link to="#" className="hover:text-gray-300"><Quotation /></Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -41,8 +38,6 @@ const Navbar2 = () => {
         </div>
       </div>
 
-       
-
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-700 space-y-4 py-4">
@@ -50,12 +45,11 @@ const Navbar2 = () => {
           <Link to="/about" className="block text-center hover:text-gray-300">About</Link>
           <Link to="/services" className="block text-center hover:text-gray-300">Services</Link>
           <Link to="/contact" className="block text-center hover:text-gray-300">Contact Us</Link>
-          <Link to="#" className="hover:text-black text-center"><Quotation/></Link>
-          
+          <Link to="#" className="hover:text-black text-center"><Quotation /></Link>
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar2
+export default Navbar2;

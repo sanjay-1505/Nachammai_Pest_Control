@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'; 
 import { Contact } from 'lucide-react';
 import ContactUs from '../Components/ContactUS';
 import FAQ from '../Components/FAQ';
@@ -44,14 +45,29 @@ const Home = () => {
         ],
       };
 
+    // Animation Variants
+    const fadeIn = {
+        hidden: { opacity: 0, y: 30 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+    };
+
+    const slideIn = {
+        hidden: { x: '-100%' },
+        visible: { x: 0, transition: { duration: 1 } }
+    };
+
+    const imageSlideIn = {
+        hidden: { x: '100%', opacity: 0 },
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
+    };
 
   return (
-    <div>
+    <motion.div initial="hidden" animate="visible">
       <RandomPointsGame/>
         {/* Carousel */}
         <section className="slider-container overflow-hidden">
             <Slider {...settings}>
-            <div className="bg-[url('/images/bannersss1.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            <motion.div variants={fadeIn} className="bg-[url('/images/bannersss1.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="container">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -63,14 +79,14 @@ const Home = () => {
                     </p>
 
                     <Link to="/contact">
-                    <button className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide transition-all hover:transition-all hover:bg-gray-200">
+                    <motion.button whileHover={{ scale: 1.1 }} className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide transition-all hover:transition-all hover:bg-gray-200">
                         Contact Us
-                    </button>
+                    </motion.button>
                     </Link>
                 </div>
                 </div>
-            </div>
-            <div className="bg-[url('/images/bannersss2.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            </motion.div>
+            <motion.div variants={fadeIn} className="bg-[url('/images/bannersss2.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -82,14 +98,14 @@ const Home = () => {
                     </p>
 
                     <Link to="/services">
-                    <button className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide">
+                    <motion.button whileHover={{ scale: 1.1 }} className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide">
                         Services
-                    </button>
+                    </motion.button>
                     </Link>
                 </div>
                 </div>
-            </div>
-            <div className="bg-[url('/images/bannersss.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
+            </motion.div>
+            <motion.div variants={fadeIn} className="bg-[url('/images/bannersss.jpg')] bg-cover bg-center bg-no-repeat w-full min-h-screen relative">
                 <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 px-8 md:px-20 lg:px-28">
                 <div className="">
                     <h3 className="text-green-900 font-extrabold text-4xl lg:text-5xl text-stroke-2-white mb-3">
@@ -101,25 +117,25 @@ const Home = () => {
                     </p>
 
                     <Link to="/about">
-                    <button className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide">
+                    <motion.button whileHover={{ scale: 1.1 }} className="bg-green-900 px-6 py-2 rounded-full text-black font-semibold text-xl md:text-2xl tracking-wide">
                         About Us
-                    </button>
+                    </motion.button>
                     </Link>
                 </div>
                 </div>
-            </div>
+            </motion.div>
             </Slider>
         </section>
 
         {/*About Us*/}
-        <section className="-mt-2 py-14 ">
+        <motion.section variants={fadeIn} className="-mt-2 py-14 ">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
-          <div className="flex justify-center items-center text-black font-bold mb-5 md:mb-8">
-            <h1 className="text-4xl md:text-5xl">About Us</h1>
-          </div>
+          <motion.div className="flex justify-center items-center text-black font-bold mb-5 md:mb-8">
+            <motion.h1 className="text-4xl md:text-5xl">About Us</motion.h1>
+          </motion.div>
 
           <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 lg:gap-x-10 xl:gap-0 justify-between items-center">
-            <div className="flex flex-col justify-start order-2 lg:order-1 gap-y-4">
+            <motion.div variants={fadeIn} className="flex flex-col justify-start order-2 lg:order-1 gap-y-4">
               <h2 className="text-[#333333] text-3xl font-bold leading-snug mt-4 lg:mt-0 lg:mb-2.5">
                 NACHAMMAI PEST CONTROL
               </h2>
@@ -134,19 +150,19 @@ const Home = () => {
 
               <div className="mt-5 flex justify-end">
                 <Link to="/about">
-                  <button className="flex items-center text-black font-semibold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
+                  <motion.button whileHover={{ scale: 1.1 }} className="flex items-center text-black font-semibold underline-offset-1 bg-green-800 text-lg px-5 py-2 rounded-lg shadow-md hover:bg-green-500 transition">
                     See More
                     <img
                       className="ml-0.5 h-6 w-6 -mr-2"
                       src="/icons/Right2.svg"
                       alt="Arrow icon"
                     />
-                  </button>
+                  </motion.button>
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex justify-center flex-col lg:justify-end gap-4 items-center order-1 lg:order-2">
+            <motion.div variants={fadeIn} className="flex justify-center flex-col lg:justify-end gap-4 items-center order-1 lg:order-2">
               <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg '>Find Out what can we do for you.
               </p>
               <p className='text-[#333333] text-justify leading-relaxed md:text-xl font-bold text-lg'>Get in Touch Today for more information!
@@ -154,13 +170,13 @@ const Home = () => {
               
               <button className='bg-green-800 p-3 rounded-md text-black  font-semibold'><a href="tel:+91 9791171377">Call Now</a></button>
               <button className='bg-green-800 p-3 rounded-md text-black font-semibold'><Link to='/contact'>Contact Us</Link></button>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-        {/*Pest Services*/}
-        <div className="bg-white p-4 rounded-lg  mt-3 mb-3">
+      {/*Pest Services*/}
+      <motion.div variants={fadeIn} className="bg-white p-4 rounded-lg  mt-3 mb-3">
            <h2 className="text-2xl text-center font-bold mb-4">What Kind of Pest Control Service Are You Looking For?</h2>
             <div className="grid grid-cols-3 gap-4">
               <div className="flex flex-col items-center justify-center">
@@ -188,17 +204,17 @@ const Home = () => {
                 <p className="text-black mt-2 font-bold">Bed Bugs</p>
               </div>
             </div>
-        </div>
+        </motion.div>
 
         {/*Technicians*/}
 
         <section className="pt-8 md:pt-14 ">
-          <h1 className="mt-5 md:mt-0 text-3xl md:text-5xl text-center mb-10 text-black">
+          <motion.h1 variants={fadeIn} className="mt-5 md:mt-0 text-3xl md:text-5xl text-center mb-10 text-black">
             Profession Pest Control Technicians
-          </h1>
+          </motion.h1>
        </section>
 
-       <section className="pt-8 md:pt-14 mb-4">
+       <motion.section variants={fadeIn} className="pt-8 md:pt-14 mb-4">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
@@ -224,9 +240,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="pt-5 md:pt-14 mb-4 ">
+      <motion.section variants={fadeIn} className="pt-5 md:pt-14 mb-4 ">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div className="flex flex-col">
@@ -251,9 +267,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="pt-8 md:pt-14 mb-4">
+      <motion.section variants={fadeIn} className="pt-8 md:pt-14 mb-4">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
@@ -279,9 +295,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="pt-5 md:pt-14 mb-4">
+      <motion.section variants={fadeIn} className="pt-5 md:pt-14 mb-4">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div className="flex flex-col">
@@ -306,9 +322,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="pt-8 md:pt-14 mb-4">
+      <motion.section variants={fadeIn} className="pt-8 md:pt-14 mb-4">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
@@ -334,18 +350,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
-
-      <div className='mt-3 mb-4'>
-      <FAQ/>
-      </div>
-      <ContactUs/>
-    </div>
-
-   
+      </motion.section>
 
 
-  )
-}
 
-export default Home
+
+
+        
+        <motion.div variants={fadeIn} className="bg-white p-4 rounded-lg  mt-3 mb-3">
+            <FAQ />
+        </motion.div>
+        
+        {/*Contact*/}
+        <motion.section variants={fadeIn} className="p-4">
+          <ContactUs />
+        </motion.section>
+    </motion.div>
+  );
+};
+
+export default Home;
