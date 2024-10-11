@@ -1,8 +1,24 @@
 import React from 'react'
+import { motion } from 'framer-motion'; 
+
+
+
 
 const Navbar = () => {
+
+  const fadeIn = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+  };
+  
+  const slideIn = {
+    hidden: { x: '-100%' },
+    visible: { x: 0, transition: { duration: 1 } }
+  };
+
+
   return (
-    <div className="bg-gray-200 py-4 px-6 flex justify-between items-center flex-col md:flex-row">
+    <motion.div variants={fadeIn} initial="hidden" animate="visible" className="bg-gray-200 py-4 px-6 flex justify-between items-center flex-col md:flex-row">
       <div className="flex items-center">
         <img src="./images/logo.png" alt="Nachammai Pest Control" className="w-[125px] h-[80px] mr-4" />
         
@@ -28,7 +44,7 @@ const Navbar = () => {
         </div>
        
       </div>
-    </div>
+    </motion.div>
   )
 }
 
