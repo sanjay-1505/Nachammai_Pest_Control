@@ -10,8 +10,13 @@ const Schema = z
       .string()
       .min(3, { message: "Name must contain at least 3 characters" })
       .max(20, { message: "Name must contain at most 20 characters" }),
-
+    
     email: z.string().email({ message: "Email is required" }),
+
+    mobile: z
+      .string()
+      .length(10, { message: "Mobile number must be exactly 10 digits" })
+      .regex(/^[0-9]+$/, { message: "Mobile number must be digits only" }),
 
     message: z
       .string()
@@ -19,10 +24,6 @@ const Schema = z
       .max(250, {
         message: "Your message must contain at most 250 characters",
       }),
-  })
-  .refine((data) => data.password === data.repeatPassword, {
-    message: "Passwords should be the same",
-    path: ["repeatPassword"],
   });
 
 const ContactUs = () => {
@@ -41,6 +42,7 @@ const ContactUs = () => {
     const templateParams = {
       from_name: formData.name,
       from_email: formData.email,
+      mobile: formData.mobile, // Include mobile number in the params
       message: formData.message,
     };
 
@@ -115,6 +117,27 @@ const ContactUs = () => {
             {errors && (
               <small className="text-red-500 text-sm">
                 {errors.email?.message}
+              </small>
+            )}
+          </div>
+          <div>
+            <label
+              htmlFor="mobile"
+              className="text-[#333333] text-lg block mb-2"
+            >
+              Mobile Number
+            </label>
+            <input
+              type="text"
+              name="mobile"
+              id="mobile"
+              placeholder="Enter your mobile number"
+              {...register("mobile")}
+              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-gray-300 focus:border-brown600 focus:outline-none"
+            />
+            {errors && (
+              <small className="text-red-500 text-sm">
+                {errors.mobile?.message}
               </small>
             )}
           </div>

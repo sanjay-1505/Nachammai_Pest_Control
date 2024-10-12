@@ -14,7 +14,9 @@ const Navbar2 = () => {
           <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/services" className="hover:text-gray-300">Services</Link>
           <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
-          <Link to="#" className="hover:text-gray-300"><Quotation /></Link>
+          <button className=" bg-lime-500 text-black font-semibold py-2 px-4 rounded text-center hover:bg-lime-600">
+              <Link to="/quotation" className="hover:text-gray-300">Get Free Quote</Link>
+          </button>
         </div>
 
         {/* Hamburger Icon */}
@@ -40,12 +42,14 @@ const Navbar2 = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-700 space-y-4 py-4">
+        <div className="md:hidden bg-gray-700 flex items-center flex-col space-y-4 py-4">
           <Link to="/" className="block text-center hover:text-gray-300">Home</Link>
           <Link to="/about" className="block text-center hover:text-gray-300">About</Link>
           <Link to="/services" className="block text-center hover:text-gray-300">Services</Link>
           <Link to="/contact" className="block text-center hover:text-gray-300">Contact Us</Link>
-          <Link to="#" className="hover:text-black text-center"><Quotation /></Link>
+          <button className=" bg-lime-500  text-black font-semibold py-2 px-4 rounded hover:bg-lime-600">
+              <Link to="/quotation" className="hover:text-gray-300">Get Free Quote</Link>
+          </button>
         </div>
       )}
     </nav>
