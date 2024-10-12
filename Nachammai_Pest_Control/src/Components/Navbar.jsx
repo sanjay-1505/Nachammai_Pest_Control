@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <motion.div variants={fadeIn} initial="hidden" animate="visible" className="bg-gray-200 py-4 px-6 flex justify-between items-center flex-col md:flex-row">
       <div className="flex items-center">
-        <img src="./images/logo.png" alt="Nachammai Pest Control" className="w-[125px] h-[80px] mr-4" />
+        <img src="./images/logo.png" alt="Nachammai Pest Control" className="h-28 mr-4" />
         
       </div>
       <div className="flex flex-col space-y-2 space-x-6 lg:flex-row ">

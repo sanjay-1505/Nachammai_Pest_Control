@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <motion.footer variants={footerAnimation} initial="hidden" animate="visible" className=" pt-14 pb-5 px-8 md:px-16 lg:px-32">
+    <motion.footer variants={footerAnimation} initial="hidden" animate="visible" className=" pt-14  pb-5 px-8 md:px-16 lg:px-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:flex justify-between">
         <div className="flex sm:space-x-4 xl:space-x-8">
           <div className="hidden sm:block">
@@ -166,7 +166,7 @@ const Footer = () => {
               </div>
               <div>
                 <h1 className="text-brown900 font-semibold">Location</h1>
-                <p className="text-[#333333]">Kattupakkam,Chennai</p>
+                <p className="text-[#333333]">Kattupakkam,Chennai - 600056</p>
               </div>
             </div>
           </div>
