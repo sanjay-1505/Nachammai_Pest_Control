@@ -70,7 +70,7 @@ const Quotation = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative p-20 bg-white rounded-lg shadow-lg z-50 max-w-4xl w-full overflow-auto" // Increased max-w and added h-full
+        className="relative p-8 md:p-20 bg-white rounded-lg shadow-lg z-50 max-w-4xl w-full  overflow-auto" // Increased max-w and added h-full
       >
         {/* Close Button */}
         <button
