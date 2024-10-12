@@ -20,7 +20,7 @@ function App() {
       href="https://wa.me/+919791171377"
       target="#"
       rel="noopener noreferrer"
-      className="fixed bottom-14 right-6 z-50 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:scale-110"
+      className="fixed bottom-[50%] md:bottom-20 right-6 z-50 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:scale-110"
       aria-label="WhatsApp"
       >
       <img src="/images/whatsapp.png" alt="" className="w-14 h-14 rounded-lg" />

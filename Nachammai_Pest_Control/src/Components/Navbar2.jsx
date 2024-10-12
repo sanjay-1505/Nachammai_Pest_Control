@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Quotation from '../Pages/Quotation';
 
 const Navbar2 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="bg-gray-700 w-[75%] rounded-lg mx-auto mt-3 mb-3 text-white p-4 sticky top-0 z-50">
+    <nav className="bg-none p-0 md:bg-gray-700  font-semibold w-full md:w-[75%] rounded-lg mx-auto md:mt-3 mb-3 text-white md:p-4 sticky top-0 z-50">
       <div className="flex justify-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-10 items-center">
@@ -14,44 +11,22 @@ const Navbar2 = () => {
           <Link to="/about" className="hover:text-gray-300">About</Link>
           <Link to="/services" className="hover:text-gray-300">Services</Link>
           <Link to="/contact" className="hover:text-gray-300">Contact Us</Link>
-          <button className=" bg-lime-500 text-black font-semibold py-2 px-4 rounded text-center hover:bg-lime-600">
-              <Link to="/quotation" className="hover:text-gray-300">Get Free Quote</Link>
-          </button>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)}>
-            <svg
-              className="w-6 h-6 text-white"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+          <button className="bg-lime-500 text-black font-semibold py-2 px-4 rounded text-center hover:bg-lime-600">
+            <Link to="/quotation" className="hover:text-gray-300">Get Free Quote</Link>
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-gray-700 flex items-center flex-col space-y-4 py-4">
-          <Link to="/" className="block text-center hover:text-gray-300">Home</Link>
-          <Link to="/about" className="block text-center hover:text-gray-300">About</Link>
-          <Link to="/services" className="block text-center hover:text-gray-300">Services</Link>
-          <Link to="/contact" className="block text-center hover:text-gray-300">Contact Us</Link>
-          <button className=" bg-lime-500  text-black font-semibold py-2 px-4 rounded hover:bg-lime-600">
-              <Link to="/quotation" className="hover:text-gray-300">Get Free Quote</Link>
-          </button>
-        </div>
-      )}
+      {/* Mobile Menu - Sticky at Bottom */}
+      <div className="md:hidden  bg-gray-700 fixed bottom-3 text-sm font-semibold left-0 right-0 z-50 p-2 rounded-lg flex items-center justify-around">
+        <Link to="/" className="block text-center hover:text-gray-300">Home</Link>
+        <Link to="/about" className="block text-center hover:text-gray-300">About</Link>
+        <Link to="/services" className="block text-center hover:text-gray-300">Services</Link>
+        <Link to="/contact" className="block text-center hover:text-gray-300">Contact</Link>
+        <button className="bg-lime-500 text-black font-semibold py-2 px-4 rounded hover:bg-lime-600">
+          <Link to="/quotation" className="hover:text-gray-300">Get Quote</Link>
+        </button>
+      </div>
     </nav>
   );
 };
