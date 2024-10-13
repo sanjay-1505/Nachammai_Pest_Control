@@ -24,13 +24,15 @@ const About = () => {
                 Our Vision & mission
               </h2>
               <p className="text-[#18311c] leading-relaxed md:text-xl">
-                We focus on making the best resource, for an excellent Growing
-                media. We are specializing in a wide range of value-added coir
-                products. Our dream is to support and cater globally to a
-                sustainable day-to-day living with our eco-friendly products.
-                Grow as the best sustainable agro supplier ensuring sufficient
-                supply with high quality, having in mind, the protection of our
-                environment and natural resources.
+                  our vision is to become the leading provider of innovative and 
+                  eco-friendly pest control solutions in Tamil Nadu, ensuring safe and 
+                  healthy environments for our clients and communities. Our mission is to 
+                  deliver reliable and effective pest management services tailored to the 
+                  unique needs of each client. We are committed to using environmentally 
+                  friendly practices while prioritizing customer satisfaction and maintaining 
+                  the highest standards of professionalism. Through continuous training and the 
+                  latest technologies, we strive to protect homes, businesses, and gardens, 
+                  fostering a culture of safety and sustainability.
               </p>
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
@@ -59,12 +61,15 @@ const About = () => {
               />
             </div>
             <p className="text-[#18311c] leading-relaxed md:text-xl">
-              Over the past 40 years, our family had standard experience growing
-              coconuts on our farms with immediate production farms to the
-              growing medium. We are successful third-generation young
-              entrepreneurs entirely focusing on long-term business. So as we
-              started a new venture in the same industry to add more valuable
-              products.
+               our team is comprised of highly skilled and dedicated professionals who
+               are passionate about providing effective pest management solutions. With 
+               over 5 years of experience in the industry, our technicians are trained 
+               in the latest pest control techniques and environmentally friendly practices. 
+               Each team member is committed to delivering exceptional service, ensuring the 
+               safety and satisfaction of our clients. We believe in continuous learning and development, 
+               which empowers our team to stay ahead of industry trends and provide the best possible 
+               solutions for your pest control needs. Together, we work diligently to create pest-free 
+               environments for homes, businesses, and gardens throughout Tamil Nadu.
             </p>
           </div>
         </div>

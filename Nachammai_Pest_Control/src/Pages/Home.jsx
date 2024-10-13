@@ -130,12 +130,20 @@ const Home = () => {
                 NACHAMMAI PEST CONTROL
               </h2>
               <p className="text-[#18311C] text-justify leading-relaxed md:text-xl">
-                A successful and renowned coco coir exporter and supplier from
-                India, JDS specializes in premium quality Coco Products. We work
-                continuously to explore and exhibit innovative collections in
-                the industry. We also offer customized solutions to meet the
-                unique needs of our clients. Choose JDS for all your Coco Coir
-                needs and experience the difference in quality and service.
+                Nachammai Pest Control provides comprehensive commercial and residential pest
+                control solutions across Tamil Nadu. With over 5 years of experience, we have
+                safeguarded numerous properties throughout the region, including schools,
+                colleges, and organizations, earning the trust and satisfaction of our valued
+                customers. As a leading pest control service, we offer a wide range of services, 
+                including termite control, cockroach control, rodent control,
+                ant control, mosquito control, and rat control, all at affordable rates.
+                If you're engaged in gardening or organic farming in Tamil Nadu, we understand
+                the importance of maintaining a healthy environment. Don't let stubborn weeds,
+                millipedes, centipedes, or snakes disrupt your passion. Nachammai Pest Control
+                offers hassle-free treatments for pre- and post-construction termite control
+                and efficient bed bug control solutions. Take control of your space by scheduling
+                a complimentary inspection for your residential or commercial property.
+                Let us help you reclaim your environment and eliminate pests effectively—your pest-free life starts here!
               </p>
 
               <div className="mt-5 flex justify-end">
@@ -212,13 +220,14 @@ const Home = () => {
                 Pest Control Inspections done right 
               </h2>
               <p className="text-[#18311C] leading-relaxed md:text-xl">
-                We focus on making the best resource, for an excellent Growing
-                media. We are specializing in a wide range of value-added coir
-                products. Our dream is to support and cater globally to a
-                sustainable day-to-day living with our eco-friendly products.
-                Grow as the best sustainable agro supplier ensuring sufficient
-                supply with high quality, having in mind, the protection of our
-                environment and natural resources.
+                At Nachammai Pest Control, our team of professional pest control
+                technicians is dedicated to providing high-quality pest management
+                solutions across Tamil Nadu. With over 5 years of experience, our skilled
+                technicians employ effective methods and eco-friendly products to tackle
+                various pest issues, including termites, cockroaches, rodents, ants,
+                mosquitoes, and rats. Their expertise ensures that we deliver reliable,
+                safe, and efficient services to residential and commercial clients alike. 
+                Trust our professionals to protect your property and create a pest-free environment for you and your loved ones.
               </p>
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
@@ -237,15 +246,18 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 relative">
             <div className="flex flex-col">
               <h2 className="text-3xl font-bold text-[#18311C] mb-4">
-                Customizd Treatment Plans
+                Customized Treatment Plans
               </h2>
               <p className="text-[#18311C] leading-relaxed md:text-xl">
-                Through unparalleled customer service and providing excellent
-                quality products, we aspire to excel in matching consistently
-                the customer's expectations. Our customer service is swift,
-                comfortable, individualized, and understanding. Our company
-                delivers it by taking sufficient time in analyzing and
-                recognizing customer needs.
+                 We understand that each pest problem
+                 is unique, which is why we offer customized treatment plans tailored
+                 to meet the specific needs of our clients across Tamil Nadu. Our
+                 professional pest control technicians conduct thorough inspections
+                 to assess the extent of the infestation and identify the types of pests
+                 present. Based on this analysis, we develop targeted strategies that combine
+                 effective methods and eco-friendly products to ensure optimal results.
+                 Whether you're dealing with termites, cockroaches, rodents, or other pests,
+                 our personalized approach guarantees that you receive the most effective solutions for a pest-free environment.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end items-center">
@@ -267,13 +279,13 @@ const Home = () => {
                 Your Pest Free Partners
               </h2>
               <p className="text-[#18311C] leading-relaxed md:text-xl">
-                We focus on making the best resource, for an excellent Growing
-                media. We are specializing in a wide range of value-added coir
-                products. Our dream is to support and cater globally to a
-                sustainable day-to-day living with our eco-friendly products.
-                Grow as the best sustainable agro supplier ensuring sufficient
-                supply with high quality, having in mind, the protection of our
-                environment and natural resources.
+                we believe in providing service on your time, 
+                ensuring that pest control solutions fit seamlessly into your schedule.
+                Our dedicated team of professional technicians is flexible and available
+                to accommodate your needs, whether you require a prompt inspection or a tailored
+                treatment plan. With over 5 years of experience, we prioritize your convenience while
+                delivering effective, eco-friendly pest management solutions. Trust us to handle your
+                pest issues efficiently, allowing you to enjoy a pest-free environment without disrupting your daily routine.
               </p>
             </div>
             <div className="flex justify-center order-2 lg:order-1 lg:justify-start">
@@ -295,12 +307,13 @@ const Home = () => {
                 Service on your time
               </h2>
               <p className="text-[#18311C] leading-relaxed md:text-xl">
-                Through unparalleled customer service and providing excellent
-                quality products, we aspire to excel in matching consistently
-                the customer's expectations. Our customer service is swift,
-                comfortable, individualized, and understanding. Our company
-                delivers it by taking sufficient time in analyzing and
-                recognizing customer needs.
+                At Nachammai Pest Control, we understand that your time is valuable.
+                That’s why we offer service on your time, providing flexible scheduling
+                options to meet your pest control needs. Whether it’s a residential or commercial
+                property, our professional technicians are dedicated to accommodating your schedule, 
+                ensuring that effective pest management doesn’t disrupt your daily routine. 
+                With over 5 years of experience, we are committed to delivering prompt and reliable solutions, 
+                allowing you to reclaim your space and enjoy a pest-free environment at your convenience.
               </p>
             </div>
             <div className="flex justify-center lg:justify-end items-center">
