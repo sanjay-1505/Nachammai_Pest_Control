@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: [
     "./index.html",
@@ -7,9 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-
-        sans: ["Montserrat", "sans-serif"] // "sans-serif" acts as a fallback
-
+        'sans': ['"Montaga, sans-serif"', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         brown50: "#fdf7f1",

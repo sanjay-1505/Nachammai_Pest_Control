@@ -32,7 +32,7 @@ const FAQ = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6">
-      <h2 className="text-3xl font-bold mb-6 text-center">Frequently asked questions</h2>
+      <h2 className="text-3xl font-bold mb-6 text-[#18311c] text-center">Frequently asked questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border-b-2 pb-4">
@@ -40,11 +40,11 @@ const FAQ = () => {
               className="flex justify-between items-center cursor-pointer" 
               onClick={() => toggle(index)}
             >
-              <h3 className="text-lg font-medium">{faq.question}</h3>
+              <h3 className="text-lg text-black font-semibold">{faq.question}</h3>
               <span className="text-xl">{open === index ? '-' : '+'}</span>
             </div>
             {open === index && (
-              <p className="mt-2 text-gray-600">
+              <p className="mt-2 font-semibold text-[#18311c]">
                 {faq.answer}
               </p>
             )}

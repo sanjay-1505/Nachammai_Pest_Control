@@ -10,20 +10,20 @@ const About = () => {
 
   return (
     <motion.div variants={fadeIn} initial="hidden" animate="visible"  >
-      <section className="relative bg-[url('/images/bannersss2.jpg')] bg-center bg-no-repeat bg-cover min-h-[600px] flex justify-center items-center">
+      <section className="relative bg-[url('/images/aboutbanner.avif')] bg-center bg-no-repeat bg-cover w-full min-h-[600px] flex justify-center items-center">
         <h1 className=" text-black text-5xl md:text-6xl font-semibold">
           About Us
         </h1>
       </section>
 
-      <section className="pt-8 md:pt-14 ">
+      <section className="pt-8 md:pt-14 bg-teal-50">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex flex-col order-1 lg:order-2">
-              <h2 className="text-3xl font-bold text-black mb-4">
+              <h2 className="text-3xl font-bold text-[#18311c] mb-4">
                 Our Vision & mission
               </h2>
-              <p className="text-[#333333] leading-relaxed md:text-xl">
+              <p className="text-[#18311c] leading-relaxed md:text-xl">
                 We focus on making the best resource, for an excellent Growing
                 media. We are specializing in a wide range of value-added coir
                 products. Our dream is to support and cater globally to a
@@ -45,11 +45,11 @@ const About = () => {
       </section>
 
 
-      <section className="pt-8 md:pt-12 pb-8 ">
+      <section className="pt-8 md:pt-12 pb-8 bg-teal-50">
         <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
           <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-3xl font-bold text-brown900 mb-4">
+              <h2 className="text-3xl font-bold text-[#18311c] mb-4">
                 Our Team
               </h2>
               <img
@@ -58,7 +58,7 @@ const About = () => {
                 className="object-cover rounded-lg mb-3 md:mb-10 h-[400px] w-[400px]"
               />
             </div>
-            <p className="text-[#333333] leading-relaxed md:text-xl">
+            <p className="text-[#18311c] leading-relaxed md:text-xl">
               Over the past 40 years, our family had standard experience growing
               coconuts on our farms with immediate production farms to the
               growing medium. We are successful third-generation young

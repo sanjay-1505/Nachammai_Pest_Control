@@ -8,18 +8,18 @@ const Footer = () => {
   };
 
   return (
-    <motion.footer variants={footerAnimation} initial="hidden" animate="visible" className=" pt-14  pb-5 px-8 md:px-16 lg:px-32">
+    <motion.footer variants={footerAnimation} initial="hidden" animate="visible" className="bg-[#f5f7f4] pt-14  pb-5 px-8 md:px-16 lg:px-32">
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:flex justify-between">
         <div className="flex sm:space-x-4 xl:space-x-8">
           <div className="hidden sm:block">
-            <img src="/images/logo.png" alt="logo" className="w-20 h-20 border border-black rounded-lg " />
+            <img src="/images/logo.png" alt="logo" className=" h-28 border border-black rounded-lg " />
           </div>
 
           <div>
-            <h1 className="font-bold text-brown900 text-2xl mb-3">
+            <h1 className="font-bold text-[#18311c] text-2xl mb-3">
               NACHAMMAI Pest Control
             </h1>
-            <p className="text-[#333333] max-w-64 xl:max-w-md">
+            <p className="text-[#18311c] max-w-64 xl:max-w-md">
               Over the past 40 years, our family had standard experience growing
               coconuts on our farms with immediate production farms to the
               growing medium. We are successful third-generation young
@@ -29,7 +29,7 @@ const Footer = () => {
 
             <div className="mt-8 flex items-center space-x-3 xl:space-x-5">
               <a href="http://" target="_blank" rel="noreferrer">
-                <div className="bg-brown800 hover:bg-brown900 rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
+                <div className="bg-[#2987da] hover:bg-[#244867] rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
                   <img
                     src="/images/instagram.png"
                     alt="instagram"
@@ -42,22 +42,22 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div className="bg-brown800 hover:bg-brown900 rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
+                <div className="bg-[#2987da] hover:bg-[#244867] rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
                   <img src="/images/linkedin.png" alt="linkedin" />
                 </div>
               </a>
               <a href="http://" target="_blank" rel="noreferrer">
-                <div className="bg-brown800 hover:bg-brown900 rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
+                <div className="bg-[#2987da] hover:bg-[#244867] rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
                   <img src="/images/youtube.png" alt="youtube" />
                 </div>
               </a>
               <a href="http://" target="_blank" rel="noreferrer">
-                <div className="bg-brown800 hover:bg-brown900 rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
+                <div className="bg-[#2987da] hover:bg-[#244867] rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
                   <img src="/images/facebook.png" alt="facebook" />
                 </div>
               </a>
               <a href="http://" target="_blank" rel="noreferrer">
-                <div className="bg-brown800 hover:bg-brown900 rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
+                <div className="bg-[#2987da] hover:bg-[#244867] rounded-full w-9 h-9 hover:cursor-pointer flex items-center justify-center">
                   <img src="/images/twitterX.png" alt="twitterX" />
                 </div>
               </a>
@@ -67,7 +67,7 @@ const Footer = () => {
 
         <div className="flex md:justify-center mt-8 md:mt-0 sm:ml-20 xl:-ml-20">
           <div>
-            <h1 className="font-bold text-brown900 text-2xl mb-5">
+          <h1 className="font-bold text-[#18311c] text-2xl mb-5">
               Pest Control Services
             </h1>
 
@@ -75,7 +75,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Residential
@@ -84,7 +84,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Rodent
@@ -93,7 +93,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Termite
@@ -102,7 +102,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Bed Bug
@@ -111,7 +111,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Mosquito
@@ -120,7 +120,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/services"
-                  className="footer-active-nav text-brown500! font-semibold"
+                  className="footer-active-nav text-[#18311c] font-bold"
                   aria-current="page"
                 >
                   Green Pest Control
@@ -131,7 +131,7 @@ const Footer = () => {
         </div>
 
         <div className="sm:ml-20 xl:ml-0">
-          <h1 className="font-bold text-brown900 text-2xl mb-5 mt-8 lg:mt-0">
+          <h1 className="font-bold text-[#18311c] text-2xl mb-5 mt-8 lg:mt-0">
             Contact us
           </h1>
 
@@ -142,8 +142,8 @@ const Footer = () => {
               </div>
               <div className="w-full">
                 <a href="mailto:nachammaipestservice@gmail.com">
-                  <h1 className="text-brown900 font-semibold -mt-1">Mail Us</h1>
-                  <p className="text-[#333333] break-all">
+                  <h1 className="text-[#18311c] font-bold -mt-1">Mail Us</h1>
+                  <p className="text-black font-bold break-all">
                   nachammaipestservice@gmail.com
                   </p>
                 </a>
@@ -155,8 +155,8 @@ const Footer = () => {
               </div>
               <div>
                 <a href="tel:+91 9791171377">
-                  <h1 className="text-brown900 font-semibold">Call Us</h1>
-                  <p className="text-[#333333]">+91 97911 71377</p>
+                  <h1 className="text-[#18311c] font-bold">Call Us</h1>
+                  <p className="text-black font-bold">+91 97911 71377</p>
                 </a>
               </div>
             </div>
@@ -165,15 +165,15 @@ const Footer = () => {
                 <img src="/icons/Location.svg" alt="location" className="w-6" />
               </div>
               <div>
-                <h1 className="text-brown900 font-semibold">Location</h1>
-                <p className="text-[#333333]">Kattupakkam,Chennai - 600056</p>
+                <h1 className="text-[#18311c] font-bold">Location</h1>
+                <p className="text-black font-bold">Kattupakkam,Chennai - 600056</p>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <p className="mt-10 text-center text-brown900 text-sm">
+      <p className="mt-10 text-center font-bold text-[#18311c] text-sm">
         All copyright@2024 at NACHAMMAI PEST CONTROL 
       </p>
     </motion.footer>

@@ -65,13 +65,13 @@ const ContactUs = () => {
   };
 
   return (
-    <motion.section className="bg-brown50 py-14" variants={fadeIn} initial="hidden" animate="visible" >
+    <motion.section className=" py-14" variants={fadeIn} initial="hidden" animate="visible" >
       <div className="2xl:container mx-auto px-8 md:px-16 lg:px-32">
-        <div className="flex justify-center items-center text-black mb-5 md:mb-8">
-          <h1 className="text-center text-4xl md:text-5xl">Get In Touch</h1> 
+        <div className="flex justify-center items-center text-[#18311C] mb-5 md:mb-8">
+          <h1 className="text-center text-4xl md:text-5xl">Book Now</h1> 
         </div>
 
-        <p className="md:text-xl text-[#333333] text-center mb-8 mx-auto max-w-xl">
+        <p className="md:text-xl text-[#18311C] text-center mb-8 mx-auto max-w-xl">
           We’d love to hear from you! Just fill out the form, and our expert
           team will be ready to answer your questions.
         </p>
@@ -82,7 +82,7 @@ const ContactUs = () => {
           className="max-w-4xl mx-auto space-y-8"
         >
           <div>
-            <label htmlFor="name" className="text-[#333333] text-lg block mb-2">
+            <label htmlFor="name" className="text-[#18311C] font-bold text-lg block mb-2">
               Name
             </label>
             <input
@@ -91,7 +91,7 @@ const ContactUs = () => {
               id="name"
               placeholder="Enter your name"
               {...register("name")}
-              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-gray-300 focus:border-brown600 focus:outline-none"
+              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-black focus:border-indigo-700 focus:outline-none"
             />
             {errors && (
               <small className="text-red-500 text-sm">
@@ -102,7 +102,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="email"
-              className="text-[#333333] text-lg block mb-2"
+              className="text-[#18311C] font-bold text-lg block mb-2"
             >
               Email
             </label>
@@ -112,7 +112,7 @@ const ContactUs = () => {
               id="email"
               placeholder="Enter your email"
               {...register("email")}
-              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-gray-300 focus:border-brown600 focus:outline-none"
+              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-black focus:border-indigo-700 focus:outline-none"
             />
             {errors && (
               <small className="text-red-500 text-sm">
@@ -123,7 +123,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="mobile"
-              className="text-[#333333] text-lg block mb-2"
+              className="text-[#18311C] font-bold text-lg block mb-2"
             >
               Mobile Number
             </label>
@@ -133,7 +133,7 @@ const ContactUs = () => {
               id="mobile"
               placeholder="Enter your mobile number"
               {...register("mobile")}
-              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-gray-300 focus:border-brown600 focus:outline-none"
+              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-black focus:border-indigo-700 focus:outline-none"
             />
             {errors && (
               <small className="text-red-500 text-sm">
@@ -144,7 +144,7 @@ const ContactUs = () => {
           <div>
             <label
               htmlFor="message"
-              className="text-[#333333] text-lg block mb-2"
+              className="text-[#18311C] font-bold text-lg block mb-2"
             >
               Message
             </label>
@@ -155,7 +155,7 @@ const ContactUs = () => {
               rows="7"
               placeholder="Enter your message"
               {...register("message")}
-              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-gray-300 focus:border-brown600 focus:outline-none"
+              className="w-full rounded-xl px-5 py-3 outline-none bg-transparent border-2 border-black focus:border-indigo-700 focus:outline-none"
             ></textarea>
             {errors && (
               <small className="text-red-500 text-sm">
@@ -164,7 +164,7 @@ const ContactUs = () => {
             )}
 
             <div className="mt-7">
-              <button className="px-5 py-2.5 rounded-lg text-black bg-green-900 font-semibold transition-all hover:transition-all hover:bg-green-500">
+              <button className="px-5 py-2.5 rounded-lg text-white bg-[#172e1c] font-semibold transition-all hover:transition-all hover:bg-green-500">
                 SEND MESSAGE
               </button>
             </div>
