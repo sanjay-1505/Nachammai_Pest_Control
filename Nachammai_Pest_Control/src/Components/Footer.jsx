@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container grid grid-cols-1 md:grid-cols-2 lg:flex justify-between">
         <div className="flex sm:space-x-4 xl:space-x-8">
           <div className="hidden sm:block">
-            <img src="/images/logo.png" alt="logo" className=" h-28 border border-black rounded-lg " />
+            <img src="/images/logo.png" alt="logo" className=" h-28 rounded-lg " />
           </div>
 
           <div>
@@ -20,11 +20,10 @@ const Footer = () => {
               NACHAMMAI Pest Control
             </h1>
             <p className="text-[#18311c] max-w-64 xl:max-w-md">
-              Over the past 40 years, our family had standard experience growing
-              coconuts on our farms with immediate production farms to the
-              growing medium. We are successful third-generation young
-              entrepreneurs focusing on long-term business. So, we started a new
-              venture in the same industry to add more valuable products.
+            Nachammai Pest Control provides reliable pest control solutions for residential and commercial
+            properties across Tamil Nadu. With over 5 years of experience, we specialize in termite, cockroach, 
+            rodent, ant, mosquito, and rat control. Our eco-friendly treatments ensure a healthy environment, 
+            especially for gardening enthusiasts. Schedule a complimentary inspection today and let us help you achieve a pest-free life!
             </p>
 
             <div className="mt-8 flex items-center space-x-3 xl:space-x-5">

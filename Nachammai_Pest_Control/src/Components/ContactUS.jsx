@@ -73,7 +73,7 @@ const ContactUs = () => {
 
         <p className="md:text-xl text-[#18311C] text-center mb-8 mx-auto max-w-xl">
           We’d love to hear from you! Just fill out the form, and our expert
-          team will be ready to answer your questions.
+          team will be ready to contact you.
         </p>
 
         <form
