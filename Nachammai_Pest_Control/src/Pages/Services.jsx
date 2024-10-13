@@ -56,15 +56,15 @@ const Services = () => {
 
   return (
     <>
-      <section className="relative bg-[url('/images/bannersss.jpg')] bg-center bg-no-repeat bg-cover min-h-[600px] flex justify-center items-center">
+      <section className="relative bg-[url('/images/servicesbanner.avif')] bg-center bg-no-repeat bg-cover min-h-[600px] flex justify-center items-center">
         <h1 className=" text-black text-5xl md:text-6xl font-semibold">
           Services
         </h1>
       </section>
 
-      <section className="py-12">
+      <section className="py-12 ">
       <div className="container mx-auto px-4">
-        <h2 className="text-center text-3xl font-bold mb-8">Our Services</h2>
+        <h2 className="text-center text-[#18311c] text-3xl font-bold mb-8">Our Services</h2>
         <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
           {services.map((service, index) => (
             <div key={index} className="bg-white shadow-md rounded-lg overflow-hidden">
@@ -74,11 +74,11 @@ const Services = () => {
                 className="pl-[25%] h-48 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
-                <p className="text-gray-700 mb-6">{service.description}</p>
+                <h3 className="text-xl font-bold text-black mb-4">{service.title}</h3>
+                <p className="text-[#18311c] font-semibold mb-6">{service.description}</p>
                 <a
                   href={service.website}
-                  className="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+                  className="inline-block bg-[#172e1c] text-white px-4 py-2 rounded hover:bg-green-800 transition"
                 >
                   KNOW MORE
                 </a>

@@ -62,7 +62,7 @@ const Quotation = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
+    <div className="fixed inset-0 z-50 flex items-center justify-center ">
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onClick={handleClose}></div>
 
@@ -75,7 +75,7 @@ const Quotation = () => {
         {/* Close Button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+          className="absolute top-4 right-4 text-black font-bold hover:text-gray-800"
         >
           &#10005; {/* X icon for close */}
         </button>
@@ -87,10 +87,10 @@ const Quotation = () => {
           transition={{ duration: 0.6 }}
           className="mt-4 p-6 rounded-lg shadow-md w-full"
         >
-          <h1 className="text-2xl font-bold mb-4">Quotation Form</h1>
+          <h1 className="text-2xl text-center font-bold text-[#18311c] mb-4">Quotation Form</h1>
 
           <div className="mb-4">
-            <label className="block text-sm font-medium">Client Name:</label>
+            <label className="block text-sm font-bold text-[#18311c] ">Client Name:</label>
             <input
               type="text"
               value={clientName}
@@ -100,7 +100,7 @@ const Quotation = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium">Client Address:</label>
+            <label className="block text-sm font-bold text-[#18311c]">Client Address:</label>
             <input
               type="text"
               value={clientAddress}
@@ -110,7 +110,7 @@ const Quotation = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium">Service Type:</label>
+            <label className="block text-sm font-bold text-[#18311c]">Service Type:</label>
             <select
               value={serviceType}
               onChange={(e) => setServiceType(e.target.value)}
@@ -122,14 +122,14 @@ const Quotation = () => {
             </select>
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium">Pest Services:</label>
+            <label className="block text-sm font-bold text-[#18311c]">Pest Services:</label>
             {Object.keys(rates[serviceType]).map((service) => (
               <div key={service} className="flex items-center mb-2">
                 <label className="flex items-center">
                   <input
                     type="checkbox"
                     onChange={(e) => handleServiceChange(e, service)}
-                    className="mr-2"
+                    className="mr-2 text"
                   />
                   {service.charAt(0).toUpperCase() + service.slice(1)}
                 </label>
@@ -157,7 +157,7 @@ const Quotation = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+            className="bg-[#172e1c] text-white py-2 px-4 rounded hover:bg-green-800"
           >
             Generate Quotation
           </motion.button>
