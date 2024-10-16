@@ -69,7 +69,7 @@ const Quotation = () => {
 
     try {
       // Send the data to the backend using Axios
-      const response = await axios.post("http://localhost:5000/api/quotations", quotationData);
+      const response = await axios.post("https://nachammai-pest-control.vercel.app/api/quotations", quotationData);
       console.log("Backend Response:", response.data);
     } catch (error) {
       console.error("Error submitting data:", error);
