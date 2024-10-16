@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Sample endpoint to handle POST requests for quotations
-app.post("https://nachammai-pest-control.vercel.app/quotation", (req, res) => {
+app.post("https://nachammai-pest-control.vercel.app/api/quotations", (req, res) => {
   const { clientName, clientAddress, serviceType, selectedServices, totalAmount } = req.body;
 
   // Prepare data for the Excel sheet
