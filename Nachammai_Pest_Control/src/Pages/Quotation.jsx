@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate from react
 const Quotation = () => {
   const [clientName, setClientName] = useState("");
   const [clientAddress, setClientAddress] = useState("");
+  const [clientEmail, setClientEmail] = useState("");
   const [serviceType, setServiceType] = useState("commercial");
   const [selectedServices, setSelectedServices] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
@@ -95,6 +96,16 @@ const Quotation = () => {
               type="text"
               value={clientName}
               onChange={(e) => setClientName(e.target.value)}
+              required
+              className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-sm font-bold text-[#18311c]">Client Email:</label>
+            <input
+              type="text"
+              value={clientEmail}
+              onChange={(e) => setClientEmail(e.target.value)}
               required
               className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring focus:border-blue-300"
             />
@@ -191,6 +202,8 @@ const Quotation = () => {
                   <br />
                   Nachammai Pest Control
                   <br />
+                  nachammaipestservice@gmail.com
+                  <br />
                   Kattupakkam, Chennai - 600056
                   <br />
                 </div>
@@ -200,7 +213,9 @@ const Quotation = () => {
                   <br />
                   Client Name: {clientName}
                   <br />
-                  Client Address: {clientAddress}
+                  Client Email: {clientEmail}
+                  <br />
+                  Client Address: {clientAddress} 
                   <br />
                 </div>
               </div>
