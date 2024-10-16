@@ -69,7 +69,7 @@ const Quotation = () => {
 
     try {
       // Send the data to the backend using Axios
-      const response = await axios.post("https://nachammai-pest-control.vercel.app/api/quotations", quotationData);
+      const response = await axios.post("/api/quotations", quotationData);
       console.log("Backend Response:", response.data);
     } catch (error) {
       console.error("Error submitting data:", error);
@@ -182,82 +182,101 @@ const Quotation = () => {
           </motion.button>
         </motion.form>
         
-        {/* Hidden PDF content section */}
-        <div style={{ display: "none" }}>
-          {/* PDF content */}
-          <div
-            ref={pdfRef}
-            className="p-6 bg-white shadow-md"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
-            <h1 className="text-2xl font-bold text-center mb-4">Quotation</h1>
-            <div className="flex justify-between mb-4">
-              <div>
-                <img
-                  src="/images/logo.png"
-                  alt="Nachammai Pest Control Logo"
-                  className="h-32"
-                />
-              </div>
-              <div className="text-right">
-                Quotation Date: {new Date().toLocaleDateString("en-GB")}
-              </div>
-            </div>
+         {/* Hidden PDF content section */}
+        <div style={{ display: "none" }}>
+          <div
+            ref={pdfRef}
+            className="p-6 bg-white shadow-md"
+            style={{ fontFamily: "Arial, sans-serif" }}
+          >
+            <h1 className="text-2xl font-bold text-center mb-4">Quotation</h1>
+            <div className="flex justify-between mb-4">
+              <div>
+                <img
+                  src="/images/logo.png"
+                  alt="Nachammai Pest Control Logo"
+                  className="h-32"
+                />
+              </div>
+              <div className="text-right">
+                Quotation Date: {new Date().toLocaleDateString("en-GB")}
+              </div>
+            </div>
 
-            <div className="border border-gray-300 p-4 mb-4">
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                <div className="font-bold">Client Name:</div>
-                <div>{clientName}</div>
-                <div className="font-bold">Client Address:</div>
-                <div>{clientAddress}</div>
-                <div className="font-bold">Service Type:</div>
-                <div>{serviceType}</div>
-              </div>
-            </div>
+            <div className="border border-gray-300 p-4 mb-4">
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="border border-gray-300 p-4">
+                  <strong>Quotation By:</strong>
+                  <br />
+                  Nachammai Pest Control
+                  <br />
+                  Kattupakkam, Chennai - 600056
+                  <br />
+                </div>
 
-            <h2 className="text-xl font-bold mb-2">Pest Services:</h2>
-            <table className="w-full border-collapse border border-gray-300 mb-4">
-              <thead>
-                <tr>
-                  <th className="border border-gray-300 px-4 py-2">Service</th>
-                  <th className="border border-gray-300 px-4 py-2">SQFT</th>
-                  <th className="border border-gray-300 px-4 py-2">Rate</th>
-                  <th className="border border-gray-300 px-4 py-2">Amount</th>
-                </tr>
-              </thead>
-              <tbody>
-                {selectedServices.map((service) => (
-                  <tr key={service.name}>
-                    <td className="border border-gray-300 px-4 py-2">
-                      {service.name.charAt(0).toUpperCase() +
-                        service.name.slice(1)}
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      {service.sqft}
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      {rates[serviceType][service.name]}
-                    </td>
-                    <td className="border border-gray-300 px-4 py-2">
-                      {rates[serviceType][service.name] * service.sqft}
-                    </td>
-                  </tr>
-                ))}
-                <tr>
-                  <td colSpan="3" className="border border-gray-300 px-4 py-2 font-bold">
-                    Total Amount
-                  </td>
-                  <td className="border border-gray-300 px-4 py-2">
-                    {totalAmount}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  );
+                <div className="border border-gray-300 p-4">
+                  <strong>Quotation To:</strong>
+                  <br />
+                  Client Name: {clientName}
+                  <br />
+                  Client Address: {clientAddress}
+                  <br />
+                </div>
+              </div>
+
+              <table className="w-full border-collapse mb-4">
+                <thead>
+                  <tr>
+                    <th className="border border-gray-300 p-2 bg-gray-200">
+                      Service
+                    </th>
+                    <th className="border border-gray-300 p-2 bg-gray-200">
+                      SQFT
+                    </th>
+                    <th className="border border-gray-300 p-2 bg-gray-200">
+                      Rate
+                    </th>
+                    <th className="border border-gray-300 p-2 bg-gray-200">
+                      Amount
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {selectedServices.map((service) => (
+                    <tr key={service.name}>
+                      <td className="border border-gray-300 p-2">
+                        {service.name}
+                      </td>
+                      <td className="border border-gray-300 p-2">
+                        {service.sqft}
+                      </td>
+                      <td className="border border-gray-300 p-2">
+                        {rates[serviceType][service.name]}
+                      </td>
+                      <td className="border border-gray-300 p-2">
+                        {rates[serviceType][service.name] * service.sqft}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              <div className="font-bold">Total Amount: {totalAmount}</div>
+              <div>
+                For any inquiries, email us at{" "}
+                <a
+                  href="mailto:nachammaipestservice@gmail.com"
+                  className="text-blue-600"
+                >
+                  nachammaipestservice@gmail.com
+                </a>{" "}
+                or call us at +91 97911 71377
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
 };
-
 export default Quotation;
