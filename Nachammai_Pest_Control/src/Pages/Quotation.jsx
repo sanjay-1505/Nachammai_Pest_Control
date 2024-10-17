@@ -2,16 +2,19 @@ import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import html2pdf from "html2pdf.js";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"; 
+
 
 const Quotation = () => {
-  const [clientName, setClientName] = useState("");
-  const [clientAddress, setClientAddress] = useState("");
-  const [serviceType, setServiceType] = useState("commercial");
-  const [selectedServices, setSelectedServices] = useState([]);
-  const [totalAmount, setTotalAmount] = useState(0);
-  const pdfRef = useRef();
-  const navigate = useNavigate(); 
+
+  
+  const [clientName, setClientName] = useState("");
+  const [clientAddress, setClientAddress] = useState("");
+  const [clientEmail, setClientEmail] = useState("");
+  const [serviceType, setServiceType] = useState("commercial");
+  const [selectedServices, setSelectedServices] = useState([]);
+  const [totalAmount, setTotalAmount] = useState(0);
+  const pdfRef = useRef(); // Reference for the PDF content
+  const navigate = useNavigate(); // Initialize navigate h
 
   const rates = {
     commercial: {
@@ -49,6 +52,7 @@ const Quotation = () => {
     setSelectedServices(updatedServices);
   };
 
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const pdfElement = pdfRef.current;
@@ -57,6 +61,37 @@ const Quotation = () => {
     html2pdf()
       .from(pdfElement)
       .save("quotation.pdf");
+
+  const handleSubmit =(e) => {
+    e.preventDefault();
+    const pdfElement = pdfRef.current;
+
+    const formData = {
+      clientName,
+      clientAddress,
+      clientEmail,
+      serviceType,
+      selectedServices,
+      totalAmount,
+    };
+  
+    // Print the data to the console
+    console.log("Form Data Submitted: ", formData);
+     
+
+    html2pdf()
+      .from(pdfElement)
+      .save("quotation.pdf")
+      .then(() => {
+        // Reset form fields after generating the PDF
+        setClientName("");
+        setClientAddress("");
+        setClientEmail("");
+        setServiceType("commercial");
+        setSelectedServices([]);
+        setTotalAmount(0);
+      });
+  };
 
     
     const quotationData = {
@@ -85,6 +120,7 @@ const Quotation = () => {
       {/* Backdrop */}
       <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm" onClick={handleClose}></div>
 
+
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -98,6 +134,8 @@ const Quotation = () => {
         >
           &#10005;
         </button>
+
+          
 
         <motion.form
           onSubmit={handleSubmit}
@@ -210,6 +248,8 @@ const Quotation = () => {
                   <br />
                   Nachammai Pest Control
                   <br />
+                  nachammaipestservice@gmail.com
+                  <br />
                   Kattupakkam, Chennai - 600056
                   <br />
                 </div>
@@ -219,7 +259,9 @@ const Quotation = () => {
                   <br />
                   Client Name: {clientName}
                   <br />
-                  Client Address: {clientAddress}
+                  Client Email: {clientEmail}
+                  <br />
+                  Client Address: {clientAddress} 
                   <br />
                 </div>
               </div>

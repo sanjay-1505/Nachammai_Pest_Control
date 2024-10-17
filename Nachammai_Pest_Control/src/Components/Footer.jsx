@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
               </a>
               <a
-                href="https://www.linkedin.com/company/jds-international-exports"
+                href="https://"
                 target="_blank"
                 rel="noreferrer"
               >
