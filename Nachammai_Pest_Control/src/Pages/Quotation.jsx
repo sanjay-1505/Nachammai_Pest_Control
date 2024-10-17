@@ -49,13 +49,35 @@ const Quotation = () => {
     setSelectedServices(updatedServices);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =(e) => {
     e.preventDefault();
     const pdfElement = pdfRef.current;
 
+    const formData = {
+      clientName,
+      clientAddress,
+      clientEmail,
+      serviceType,
+      selectedServices,
+      totalAmount,
+    };
+  
+    // Print the data to the console
+    console.log("Form Data Submitted: ", formData);
+     
+
     html2pdf()
       .from(pdfElement)
-      .save("quotation.pdf");
+      .save("quotation.pdf")
+      .then(() => {
+        // Reset form fields after generating the PDF
+        setClientName("");
+        setClientAddress("");
+        setClientEmail("");
+        setServiceType("commercial");
+        setSelectedServices([]);
+        setTotalAmount(0);
+      });
   };
 
   const handleClose = () => {
@@ -94,6 +116,7 @@ const Quotation = () => {
             <label className="block text-sm font-bold text-[#18311c] ">Client Name:</label>
             <input
               type="text"
+              name="clientName" 
               value={clientName}
               onChange={(e) => setClientName(e.target.value)}
               required
@@ -104,6 +127,7 @@ const Quotation = () => {
             <label className="block text-sm font-bold text-[#18311c]">Client Email:</label>
             <input
               type="text"
+               name="clientEmail"
               value={clientEmail}
               onChange={(e) => setClientEmail(e.target.value)}
               required
@@ -114,6 +138,7 @@ const Quotation = () => {
             <label className="block text-sm font-bold text-[#18311c]">Client Address:</label>
             <input
               type="text"
+              name="clientAddress"
               value={clientAddress}
               onChange={(e) => setClientAddress(e.target.value)}
               required
@@ -124,6 +149,7 @@ const Quotation = () => {
             <label className="block text-sm font-bold text-[#18311c]">Service Type:</label>
             <select
               value={serviceType}
+              name="serviceType"
               onChange={(e) => setServiceType(e.target.value)}
               required
               className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring focus:border-blue-300"
@@ -139,6 +165,7 @@ const Quotation = () => {
                 <label className="flex items-center">
                   <input
                     type="checkbox"
+                    name={`service_${service}`}
                     onChange={(e) => handleServiceChange(e, service)}
                     className="mr-2 text"
                   />
@@ -149,6 +176,7 @@ const Quotation = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     type="number"
+                    name={`sqft_${service}`}
                     placeholder="SQFT"
                     onChange={(e) =>
                       handleSqftChange(
